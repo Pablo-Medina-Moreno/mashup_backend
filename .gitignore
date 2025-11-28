@@ -1,0 +1,71 @@
+# -------------------------
+# NODE / BACKEND
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Si NO quieres commitear los lockfiles, deja esto:
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# -------------------------
+# ENVIRONMENT / SECRETOS
+# -------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# -------------------------
+# LOGS
+# -------------------------
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# COVERAGE / TEST OUTPUT
+# -------------------------
+coverage/
+.nyc_output/
+jest-cache/
+jest-dist/
+
+# -------------------------
+# EDITOR / SISTEMA
+# -------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# JetBrains
+.idea/
+
+# -------------------------
+# MISC
+# -------------------------
+*.local
+*.cache
+*.patch
+*.orig
