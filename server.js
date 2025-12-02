@@ -10,13 +10,16 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-// Rutas API
-app.use("/api", apiRoutes);
-
-// Healthcheck
-app.get("/", (req, res) => {
-  res.json({ status: "ok", message: "Music API running" });
+// Mensaje cuando se visita /api
+app.get("/api", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "Backend de Mashup Intelligence en ejecución"
+  });
 });
+
+// Rutas API reales
+app.use("/api", apiRoutes);
 
 // Middleware de errores
 app.use((err, req, res, next) => {
